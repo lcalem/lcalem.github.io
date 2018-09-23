@@ -1,0 +1,27 @@
+---
+---
+
+@import "minima";
+
+h2 {
+    margin-top: 20px;
+}
+
+p, li {
+    text-align: justify;
+}
+
+.img-block {
+    margin: auto; 
+    display: block; 
+    text-align: center;
+    font-style: italic;
+    font-size: 0.8em;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    background-color: #F2F2F2;
+    border: 1px solid #404040;
+    padding: 10px;
+  }
