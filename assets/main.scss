@@ -24,4 +24,36 @@ p, li {
     background-color: #F2F2F2;
     border: 1px solid #404040;
     padding: 10px;
-  }
+}
+
+
+.implem {
+    width: 500px;
+    display: block;
+    margin: auto;
+    background-color: #F2F2F2;
+    border: 1px solid #404040;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+.implem-step {
+    padding: 10px 0px 10px 0px;
+}
+
+.indent-1 {
+    margin-left: 25px;
+}
+
+.indent-2 {
+    margin-left: 50px;
+}
+
+.indent-3 {
+    margin-left: 75px;
+}
+
+.summary-table thead td{
+    font-weight: bold;
+}
