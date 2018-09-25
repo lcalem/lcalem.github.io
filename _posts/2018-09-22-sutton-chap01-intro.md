@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Sutton & Barto summary chap 01 - Introduction"
-date:   2018-09-22 00:23:34 +0200
+date:   2018-09-22 02:23:34 +0200
 categories: rl sutton
 math: true
 ---

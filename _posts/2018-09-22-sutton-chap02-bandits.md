@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Sutton & Barto summary chap 02 - Multi-armed bandits"
-date:   2018-09-22 01:44:00 +0200
+date:   2018-09-22 02:44:00 +0200
 categories: rl sutton
 math: true
 ---
