@@ -8,7 +8,7 @@ math: true
 
 This series of posts intends to provide a TL;DR for every chapter of the 2nd edition of the book [_Reinforcement Learning: An Introduction_][sutton-book] by Sutton & Barto, published in 2018.
 
-All the posts will follow the book's structure in bullet points, sometimes with additional explanations. This series is mostly written for people familiar with the subject or having already read the book and needing a refresher, but I'm sure many people with varying backgrounds can benefit from it too!
+All the posts will follow the book's structure in bullet points, sometimes with additional explanations. This series is mostly written for people that are familiar with the subject or that already have read the book and need a refresher, but I'm sure many people with varying backgrounds can benefit from it too!
 
 It comes from a personal observation that sometimes, all we need to get back into a topic is to read the headlines of a chapter.
 
