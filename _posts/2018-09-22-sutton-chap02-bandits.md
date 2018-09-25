@@ -23,7 +23,7 @@ The k-armed bandit problem is a good framework to learn about this evaluative fe
 - extension of the bandit setting, inspired by slot machines that are sometimes called "one-armed bandits". Here we have $k$ levers ($k$ arms).
 - repeated choice among $k$ actions
 - after each choice we receive a reward (chosen from a stationary distribution that depends on the action chosen)
-- objective: maximize total expected reward over some time period
+- objective: maximize the total expected reward over some time period
 
 Each of the $k$ actions has a mean reward that we call the __value__ of the action (q-value).
 
@@ -33,7 +33,7 @@ Each of the $k$ actions has a mean reward that we call the __value__ of the acti
 
 $$q_*(a) \doteq \mathbb{E}[R_t | A_t = a]$$
 
-If we knew the values of each action it will be trivial to solve the problem. But we don't have them so we need estimates. We call $Q_t(a)$ the estimated value for action $a$ at time $t$.
+If we knew the values of each action it would be trivial to solve the problem. But we don't have them so we need estimates. We call $Q_t(a)$ the estimated value for action $a$ at time $t$.
 
 - __greedy__ action: take the action with the highest current estimate. That's __exploitation__
 - __nongreedy__ actions allow us to __explore__ and build better estimates
@@ -99,7 +99,7 @@ $$Q_{n+1} = (1 - \alpha)^n Q_1 + \sum_{i=1}^n \alpha(1 - \alpha)^{n-i} R_i$$
 
 ## 2.6. Optimistic initial values
 
-- a way to encourage exploration effective in stationary problems
+- a way to encourage exploration, which is effective in stationary problems
 - select initial estimates to a high number (higher than the reward we can actually get in the environment) so that unexplored states have a higher value than explored ones and are selected more often
 
 ## 2.7. Upper-Confidence-Bound (UCB) Action Selection
@@ -125,7 +125,7 @@ The square-root term is a measure of the uncertainty or variance in the estimate
 - here we compute a numerical preference for each action $a$, which we denote $H_t(a)$
 - we select the action with a softmax (introducing the $\pi_t(a)$ notation)
 
-Algorithm base on stochastic gradient ascent: on each step, after selecting action $A_t$ and receiving reward $R_t$, the action preferences are updated by:
+Algorithm based on stochastic gradient ascent: on each step, after selecting action $A_t$ and receiving reward $R_t$, the action preferences are updated by:
 
 $$H_{t+1}(A_t) \doteq H_{t}(A_t) + \alpha (R_t - \bar{R_t}) \big(1 - \pi_t(A_t)\big)$$
 
@@ -136,12 +136,11 @@ $$H_{t+1}(a) \doteq H_{t}(a) + \alpha (R_t - \bar{R}_t) \pi_t(a)$$
 - $\alpha < 0$ is the step size
 - $\bar{R_t}$ is the average of all rewards up through and including time t
 
-The $\bar{R_t}$ term serves as a baseline with which the reward is compared. If the reward is higher than the baseline, then the probability of taking $A_t$ in the future is increased, and if the reward is below baseline, then probability is decreased. The non-selected actions move in the opposite direction.
+The $\bar{R_t}$ term serves as a baseline with which the reward is compared. If the reward is higher than the baseline, then the probability of taking $A_t$ in the future is increased, and if the reward is below the baseline, then the probability is decreased. The non-selected actions move in the opposite direction.
 
 ## 2.9. Associative search (contextual bandits)
 
 - __nonassociative__ tasks: no need to associate different actions with different situations
-
 - extend the nonassociative bandit problem to the associative setting
 - at each time step the bandit is different
 - learn a different policy for different bandits
