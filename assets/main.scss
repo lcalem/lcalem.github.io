@@ -57,3 +57,25 @@ p, li {
 .summary-table thead td{
     font-weight: bold;
 }
+
+.prob-table {
+    text-align: center;
+    border: none;
+    width: auto;
+    margin: auto;
+
+    td {
+        width: 70px;
+        height: 40px;
+        border: none;
+        padding: 0;
+    }
+
+    tr {
+        background-color: transparent !important;
+    }
+}
+
+.table-wrap {
+    margin-bottom: 30px;
+}
