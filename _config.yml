@@ -24,6 +24,7 @@ github_username:  lcalem
 # Build settings
 markdown: kramdown
 theme: minima
+future: true
 permalink: /blog/:year/:month/:day/:title
 plugins:
   - jekyll-feed
