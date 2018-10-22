@@ -22,7 +22,7 @@ In a _finite_ MDP, the sets of states, actions and rewards are all finite.<br/>
 The random variables $S_t$ and $R_t$ have well defined discrete probability distributions dependent only on the preceding state and action.
 For particular values $s'$ and $r$, there is a probability of these values occurring at time $t$, given particular values of $s$ and $a$:
 
-$$p(s', r | s, a) \doteq \mathbf{Pr} \{S_t = s', R_{t} = r | S_{t-1} = s, A_{t-1} = a\}$$
+$$p(s', r | s, a) \doteq \mathbf{Pr} \{S_t = s', R_{t} = r | S_{t-1} = s, A_{t-1} = a\} \label{eq:3.1}\tag{3.1}$$
 
 The function $p$ defines the __dynamics__ of the MDP.
 
@@ -54,13 +54,13 @@ The "Markov" part in "Markov Devision Process" comes from the Markov property, w
 - We introduce discounting: $G_t = R_{t+1} + \gamma R_{t+2} + \gamma^2 R_{t+3} + ... = \sum_{k=0}^{\infty} \gamma^k R_{t+k+1}$
 - $0 \leq \gamma \leq 1$, (for $\gamma = 0$ the agent is myopic)
 
-$$\begin{equation} \label{eq1}
-\begin{split}
+$$
+\begin{align}
 G_t & \doteq  R_{t+1} + \gamma R_{t+2} + \gamma^2 R_{t+3} + ...\\
  & = R_{t+1} + \gamma (R_{t+2} + \gamma R_{t+3} + ...)\\
- & = R_{t+1} + \gamma G_{t+1}
-\end{split}
-\end{equation}$$
+ & = R_{t+1} + \gamma G_{t+1} \label{eq:3.2}\tag{3.2}
+\end{align}
+$$
 
 ## 3.4. Unified notation for Episodic and continuing tasks
 
