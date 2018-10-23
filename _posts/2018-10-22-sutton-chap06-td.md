@@ -260,4 +260,4 @@ Let's call these __afterstates__ and the value functions over these __afterstate
 We can use these to valuate values more efficiently (in tic-tac-toe, two separate state-actions produce the same after state so we can just learn once on the afterstate and not on the two action-states)
 
 
-[ref-series]: /blog/2018/09/22/sutton-index
+[ref-series]: /blog/2018/09/21/sutton-index

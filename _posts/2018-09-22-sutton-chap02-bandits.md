@@ -163,4 +163,4 @@ Which one is best (evaluated on the 10 armed testbed)?
 </div>
 
 
-[ref-series]: /blog/2018/09/22/sutton-index
+[ref-series]: /blog/2018/09/21/sutton-index

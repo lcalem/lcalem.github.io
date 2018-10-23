@@ -298,4 +298,4 @@ Off-policy methods are based on __importance sampling__, that weight the return 
 In the next chapter, we'll consider methods that make use of experience (like Monte Carlo) but do bootstrap (like DP methods).
 
 
-[ref-series]: /blog/2018/09/22/sutton-index
+[ref-series]: /blog/2018/09/21/sutton-index

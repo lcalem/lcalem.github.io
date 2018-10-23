@@ -391,4 +391,4 @@ Basic ideas for solving MDPs with Dynamic Programming:
 DP requires a complete model of the environment, and does bootstrapping (i.e. creating estimates out of other estimates). In the next chapter (Monte Carlo methods) we don't require any model and we don't bootstrap. In the chapter after (TD-learning) we do not require a model either but we do bootstrap.
 
 
-[ref-series]: /blog/2018/09/22/sutton-index
+[ref-series]: /blog/2018/09/21/sutton-index
