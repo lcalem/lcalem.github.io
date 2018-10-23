@@ -234,7 +234,7 @@ $$
 
 We want to implement those Monte Carlo prediction methods on a episode-by-episode basis. 
 
-<!-- To do this, we will take inspiration from chapter 2 (<a href="/blog/2018/09/22/sutton-chap02-bandits#24-incremental-implementation">section 2.4</a>) where we incrementally computed Q estimates.<br/> -->
+To do this, we will take inspiration from chapter 2 (<a href="/blog/2018/09/22/sutton-chap02-bandits#24-incremental-implementation">section 2.4</a>) where we incrementally computed Q estimates.<br/>
 For the on-policy method, the only difference is that here we average returns whereas in chapter 2 we averaged rewards.<br/>
 For off-policy we need to distinguish between ordinary importance sampling and weighted importance sampling.<br/>
 
