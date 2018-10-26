@@ -22,6 +22,7 @@ This post provides an entrypoint for all the per-chapter posts:
 [chapter 05 - Monte Carlo methods][sutton-chap05]<br/>
 [chapter 06 - Temporal Difference Learning][sutton-chap06]<br/>
 [chapter 07 - N-step bootstrapping][sutton-chap07]<br/>
+[chapter 08 - Panning and learning with tabular methods][sutton-chap08]<br/>
 
 
 [sutton-book]: http://incompleteideas.net/book/the-book.html
@@ -32,4 +33,5 @@ This post provides an entrypoint for all the per-chapter posts:
 [sutton-chap05]: /blog/2018/10/22/sutton-chap05-montecarlo
 [sutton-chap06]: /blog/2018/10/22/sutton-chap06-td
 [sutton-chap07]: /blog/2018/10/23/sutton-chap07-nstep
+[sutton-chap08]: /blog/2018/10/26/sutton-chap08
 

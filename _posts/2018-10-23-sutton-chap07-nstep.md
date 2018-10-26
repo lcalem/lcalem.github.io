@@ -276,7 +276,7 @@ G_{t:h} & \doteq R_{t+1} + \gamma \sum_{a \neq A_{t+1}} \pi(a| S_{t+1}) Q_{h-1}(
 \end{align}
 $$
 
-After which this is exactly like the n-step return for Sarsa with Control Variates except with the action probability $\pi(A_{t+1}\s\|S_{t+1})$ substituted for the importance sampling ratio $\rho_{t+1}$. For $Q(\sigma)$, we slide linearly between these two cases:
+After which this is exactly like the n-step return for Sarsa with Control Variates except with the action probability $\pi(A_{t+1}\|S_{t+1})$ substituted for the importance sampling ratio $\rho_{t+1}$. For $Q(\sigma)$, we slide linearly between these two cases:
 
 $$G_{t:h} \doteq R_{t+1} + \gamma\big(\sigma_{t+1} \rho_{t+1} + (1 - \sigma_{t+1})\pi(A_{t+1}|S_{t+1})\big)\big( G_{t+1:h} - Q_{h-1}(S_{t+1}, A_{t+1})\big)+ \gamma \bar{V}_{h-1}(S_{t+1}) \label{eq:7.18}\tag{7.18}$$
 
