@@ -24,6 +24,9 @@ This post provides an entrypoint for all the per-chapter posts:
 [chapter 07 - N-step bootstrapping][sutton-chap07]<br/>
 [chapter 08 - Panning and learning with tabular methods][sutton-chap08]<br/>
 
+<h3>Approximate methods</h3>
+[chapter 09 - On-policy prediction][sutton-chap09]<br/>
+
 
 [sutton-book]: http://incompleteideas.net/book/the-book.html
 [sutton-chap01]: /blog/2018/09/22/sutton-chap01-intro
@@ -34,4 +37,5 @@ This post provides an entrypoint for all the per-chapter posts:
 [sutton-chap06]: /blog/2018/10/22/sutton-chap06-td
 [sutton-chap07]: /blog/2018/10/23/sutton-chap07-nstep
 [sutton-chap08]: /blog/2018/10/26/sutton-chap08
+[sutton-chap09]: /blog/2018/10/30/sutton-chap09
 
