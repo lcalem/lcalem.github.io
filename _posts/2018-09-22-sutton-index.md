@@ -27,6 +27,8 @@ This post provides an entrypoint for all the per-chapter posts:
 <h3>Approximate methods</h3>
 [chapter 09 - On-policy prediction][sutton-chap09]<br/>
 [chapter 10 - On-policy control][sutton-chap10]<br/>
+[chapter 11 - Off-policy methods for approximation][sutton-chap11]<br/>
+[chapter 12 - Eligibility Traces][sutton-chap12]<br/>
 
 
 [sutton-book]: http://incompleteideas.net/book/the-book.html
@@ -40,4 +42,6 @@ This post provides an entrypoint for all the per-chapter posts:
 [sutton-chap08]: /blog/2018/10/26/sutton-chap08
 [sutton-chap09]: /blog/2018/10/30/sutton-chap09
 [sutton-chap10]: /blog/2018/10/31/sutton-chap10
+[sutton-chap11]: /blog/2018/12/13/sutton-chap11
+[sutton-chap12]: /blog/2018/12/20/sutton-chap12
 
