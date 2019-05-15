@@ -31,7 +31,7 @@ This post provides an entrypoint for all the per-chapter posts:
 [chapter 12 - Eligibility Traces][sutton-chap12]<br/>
 [chapter 13 - Policy methods][sutton-chap13]<br/>
 
-I will not cover part 3 "going further", because it treats subjects like psychology and the link between RL and the actual human brain, which I think are better if read directly from the book. Summarizing these would probably denature the thinking spawned by reading the original material. 
+I will not cover part 3 "going further", because it treats subjects like psychology and the link between RL and the actual human brain, which I think are better if read directly from the book. Summarizing these would probably denature the thinking spawned by reading the original material.
 
 
 [sutton-book]: http://incompleteideas.net/book/the-book.html
@@ -40,12 +40,12 @@ I will not cover part 3 "going further", because it treats subjects like psychol
 [sutton-chap03]: /blog/2018/09/23/sutton-chap03-mdp
 [sutton-chap04]: /blog/2018/09/24/sutton-chap04-dp
 [sutton-chap05]: /blog/2018/10/22/sutton-chap05-montecarlo
-[sutton-chap06]: /blog/2018/10/22/sutton-chap06-td
-[sutton-chap07]: /blog/2018/10/23/sutton-chap07-nstep
-[sutton-chap08]: /blog/2018/10/26/sutton-chap08
-[sutton-chap09]: /blog/2018/10/30/sutton-chap09
-[sutton-chap10]: /blog/2018/10/31/sutton-chap10
-[sutton-chap11]: /blog/2018/12/13/sutton-chap11
-[sutton-chap12]: /blog/2018/12/20/sutton-chap12
-[sutton-chap13]: /blog/2018/12/21/sutton-chap13
+[sutton-chap06]: /blog/2018/10/31/sutton-chap06-td
+[sutton-chap07]: /blog/2018/11/19/sutton-chap07-nstep
+[sutton-chap08]: /blog/2018/12/01/sutton-chap08
+[sutton-chap09]: /blog/2018/12/22/sutton-chap09
+[sutton-chap10]: /blog/2019/01/14/sutton-chap10
+[sutton-chap11]: /blog/2019/02/02/sutton-chap11
+[sutton-chap12]: /blog/2019/02/25/sutton-chap12
+[sutton-chap13]: /blog/2019/03/21/sutton-chap13
 
