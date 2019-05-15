@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Sutton & Barto summary chap 07 - N-step bootstrapping"
-date:   2018-10-23 12:00:00 +0200
+date:   2018-11-19 12:00:00 +0200
 categories: rl sutton
 math: true
 ---

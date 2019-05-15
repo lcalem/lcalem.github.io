@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Sutton & Barto summary chap 06 - Temporal Difference Learning"
-date:   2018-10-22 12:00:00 +0200
+date:   2018-10-31 12:00:00 +0200
 categories: rl sutton
 math: true
 ---

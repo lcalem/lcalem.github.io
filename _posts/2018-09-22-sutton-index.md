@@ -8,7 +8,7 @@ math: true
 
 This series of posts intends to provide a TL;DR for every chapter of the 2nd edition of the book [_Reinforcement Learning: An Introduction_][sutton-book] by Sutton & Barto, published in 2018.
 
-All the posts will follow the book's structure in bullet points, sometimes with additional explanations. This series is mostly written for people that are familiar with the subject or that already have read the book and need a refresher, but I'm sure many people with varying backgrounds can benefit from it too!
+All the posts will follow the book's structure in bullet points, sometimes with additional explanations. This series should be accessible to anyone interested in Reinforcement Learning, and is particularly useful for people that already have read the book and need a refresher on a specific topic without having to re-read everything.
 
 It comes from a personal observation that sometimes, all we need to get back into a topic is to read the headlines of a chapter.
 
@@ -30,6 +30,8 @@ This post provides an entrypoint for all the per-chapter posts:
 [chapter 11 - Off-policy methods for approximation][sutton-chap11]<br/>
 [chapter 12 - Eligibility Traces][sutton-chap12]<br/>
 [chapter 13 - Policy methods][sutton-chap13]<br/>
+
+I will not cover part 3 "going further", because it treats subjects like psychology and the link between RL and the actual human brain, which I think are better if read directly from the book. Summarizing these would probably denature the thinking spawned by reading the original material. 
 
 
 [sutton-book]: http://incompleteideas.net/book/the-book.html
