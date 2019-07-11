@@ -12,8 +12,8 @@ p, li {
 }
 
 .img-block {
-    margin: auto; 
-    display: block; 
+    margin: auto;
+    display: block;
     text-align: center;
     font-style: italic;
     font-size: 0.8em;
@@ -82,4 +82,20 @@ p, li {
 
 .red {
     color: #DD4D40;
+}
+
+.green {
+  color: #1AA260;
+}
+
+.blue {
+    color: #3E82F7;
+}
+
+.bg-red {
+  background-color: #FFCCCB;
+}
+
+.bg-blue {
+  background-color: #CCCBFF;
 }

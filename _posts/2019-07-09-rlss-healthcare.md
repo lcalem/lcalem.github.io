@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "RL for healthcare"
+title:  "Structured bandits for healthcare"
 date:   2019-07-09 11:00:00 +0200
 categories: rl rlss
 math: true
@@ -20,11 +20,11 @@ In this talk we are going to see an application of bandits in the context of hea
 - __structured bandits__ applied to imaging parameter tuning for neuroscience
 - __contextual bandits__ for adaptive cancer treatment in mice
 
-As a reminder, the talks begin with useful definitions of RL that will be used in this setting. We are in the setting of stochastic bandits, and at each timestep $t$ we select an action $k_t \in {1, 2, ... K}$ which correspond to selecting arm $k$. We then observe the outcome $r_t$ that is drawn from a distribution with the mean of the arm we pulled $r_t \sim D(\mu_{k_t})$.
+As a reminder, the talks begin with useful definitions of RL that will be used in this setting. We are in the setting of stochastic multiarmed bandits, and at each timestep $t$ we select an action $k_t \in {1, 2, ... K}$ which correspond to selecting arm $k$. We then observe the outcome $r_t$ that is drawn from a distribution with mean $\mu$ of the arm we pulled at time $t$: $r_t \sim D(\mu_{k_t})$.
 
 In RL, we try to maximize an expected reward. To do that in the context of bandits, we need __exploration__ to make sure we don't converge to a bad arm and we also need to __exploit__ our current knowledge of which are is good or bad in order to not try too often arms (actions) that we think are bad (i.e. minimize the regret $R(T) = \sum_{t=1}^T [\mu_{k^*} - \mu_{k_t}]$).
 
-As we have learned in the previous lectures of the RLSS (see [here]() and [here]()), we have many strategies to do exactly that while having __sublinear regret__. This last notion is important because if an algorithm gives linear regret (linear with respect to iterations $t \in T$), we are not really learning anything. We want algorithms that give _sub_-linear regret to capitalize on our experience.
+As we have learned in the previous lectures of the RLSS (blogposts coming soon), we have many strategies to do exactly that while having __sublinear regret__. This last notion is important because if an algorithm gives linear regret (linear with respect to iterations $t \in T$), we are not really learning anything. We want algorithms that give _sub_-linear regret to capitalize on our experience.
 
 Some of these strategies include:
 - $\epsilon$-greedy
@@ -34,7 +34,7 @@ Some of these strategies include:
 
 All these strategies come with their guarantees, essentially they show sublinear regret (either $\sqrt(t)$ or $\log(t)$) _under the proper assumptions_. In practice sometimes these assumptions may not be true but that doesn't mean we cannot have good performance, it just open new problems.
 
-But in practice we can't compute the regret since it requires knowing the true mean $\mu_{k^*}$, which we obviously don't have because if we did we wouldn't be doing all of this in the first place. Instead, we can:
+In practice we can't compute the regret since it requires knowing the true mean $\mu_{k^*}$, which we obviously don't have because if we did we wouldn't be doing all of this in the first place. Instead, we can:
 - __minimize__ bad events so that we accumulate them sublinearly. (In real life that could be bad patient outcomes!)
 - __maximize__ cumulative good events
 
@@ -43,16 +43,16 @@ This doesn't make practice not interesting nor theory irrelevant, because all th
 
 ### Structured bandits
 
-One of these settings that arise when we want to apply bandits in practice is the case where we have a __big__ number of actions. now we can't treat the problem like a normal bandit otherwise it would take too much time before converging because we need to try all the actions enough times to converge.
+One of the settings that arise when we want to apply bandits in practice is the case where we have a __big__ number of actions. now we can't treat the problem like a normal bandit otherwise it would take too much time before converging because we need to try all the actions enough times to converge.
 
-One solution to this problem if we don't have such an amount of time is to assume there is some kind of __structure__ underlying our action space. We are going to exploit this structure in order to learn faster, by sharing information across the actions.
+One solution to this problem is to assume there is some kind of __structure__ underlying our action space. We are going to exploit this structure in order to learn faster, by sharing information across the actions.
 
 <div class="img-block" style="width: 350px; float: right; margin-left: 20px;">
     <img src="/imgs/rlss/rlss_fig_5_1.png"/>
     <span><strong>Fig 5.1.</strong> Structure in actions. Source: <a href="https://rlss.inria.fr/files/2019/07/RLSS_audrey_durand.pdf">Audrey Durand</a></span>
 </div>
 
-As a quick recap of the [structure bandits lecture](), in the structured bandit setting, instead of having on independent $\mu_k$ per action (represented as the x-axis on figure 5.1), our actions are now represented by features $\mathcal{X}$ and our expected reward is a function of these features $f: \mathcal{X} \mapsto \mathbb{R}$. Now the 'player' of the bandit has access to this action space $\mathcal{X}$ and at each episode $t$ we take an action $\mathcal{X}_t$ and we observe a reward sampled from a distribution which expected payoff is given by $f(\mathcal{X}_t)$.
+As a quick recap of the structure bandits lecture (coming soon<sup>TM</sup>), in the structured bandit setting, instead of having an independent mean $\mu_k$ per action (represented as the x-axis on figure 5.1), our actions are now represented by features $\mathcal{X}$ and our expected reward is a function of these features $f: \mathcal{X} \mapsto \mathbb{R}$. Now the 'player' of the bandit has access to this action space $\mathcal{X}$ and at each episode $t$ we take an action $\mathcal{X}_t$ and we observe a reward sampled from a distribution which expected payoff is given by $f(\mathcal{X}_t)$.
 
 ### Capturing structure
 
