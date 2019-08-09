@@ -148,7 +148,7 @@ The $\bar{R_t}$ term serves as a baseline with which the reward is compared. If 
 
 ## 2.10. Summary
 
-- one key topic is balancing exploration and exploitation. 
+- one key topic is balancing exploration and exploitation.
 - __Exploitation__ is straightforward: we select the action with the highest estimated value (we _exploit_ our current knowledge)
 - __Exploration__ is trickier, and we have seen several ways to deal with it:
     - $\varepsilon$-greedy choose randomly
@@ -163,4 +163,4 @@ Which one is best (evaluated on the 10 armed testbed)?
 </div>
 
 
-[ref-series]: /blog/2018/09/21/sutton-index
+[ref-series]: /blog/2018/09/22/sutton-index

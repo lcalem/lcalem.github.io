@@ -20,7 +20,7 @@ In this talk we are going to see an application of bandits in the context of hea
 - __structured bandits__ applied to imaging parameter tuning for neuroscience
 - __contextual bandits__ for adaptive cancer treatment in mice
 
-As a reminder, the talks begin with useful definitions of RL that will be used in this setting. We are in the setting of stochastic multiarmed bandits, and at each timestep $t$ we select an action $k_t \in {1, 2, ... K}$ which correspond to selecting arm $k$. We then observe the outcome $r_t$ that is drawn from a distribution with mean $\mu$ of the arm we pulled at time $t$: $r_t \sim D(\mu_{k_t})$.
+As a reminder, the talk begin with useful definitions of RL that will be used in this setting. We are in the setting of stochastic multiarmed bandits, and at each timestep $t$ we select an action $k_t \in {1, 2, ... K}$ which correspond to selecting arm $k$. We then observe the outcome $r_t$ that is drawn from a distribution with mean $\mu$ of the arm we pulled at time $t$: $r_t \sim D(\mu_{k_t})$.
 
 In RL, we try to maximize an expected reward. To do that in the context of bandits, we need __exploration__ to make sure we don't converge to a bad arm and we also need to __exploit__ our current knowledge of which are is good or bad in order to not try too often arms (actions) that we think are bad (i.e. minimize the regret $R(T) = \sum_{t=1}^T [\mu_{k^*} - \mu_{k_t}]$).
 

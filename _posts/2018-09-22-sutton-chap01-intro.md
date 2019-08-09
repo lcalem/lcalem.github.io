@@ -62,4 +62,4 @@ Something interesting
 - RL + game theory : Szita 2012
 
 
-[ref-series]: /blog/2018/09/21/sutton-index
+[ref-series]: /blog/2018/09/22/sutton-index

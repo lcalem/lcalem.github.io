@@ -51,7 +51,7 @@ The estimate for each state in Monte Carlo methods is independent from estimates
 
 ## 5.2. Monte Carlo methods for Action Values
 
-If the model of a system is not available, it's better to estimate _action_ values rather than state values. That's because if we only have the state values we need to do a __one-step lookahead__ that needs the model ($p$ here): 
+If the model of a system is not available, it's better to estimate _action_ values rather than state values. That's because if we only have the state values we need to do a __one-step lookahead__ that needs the model ($p$ here):
 
 $$\pi(s) = \underset{a}{\mathrm{argmax}}\;\sum_{s',r} p(s', r \mid s, a) [r + \gamma v_{\pi}(s')]\tag{5.1}$$
 
@@ -232,7 +232,7 @@ $$
 
 ## 5.6. Incremental implementation
 
-We want to implement those Monte Carlo prediction methods on a episode-by-episode basis. 
+We want to implement those Monte Carlo prediction methods on a episode-by-episode basis.
 
 To do this, we will take inspiration from chapter 2 (<a href="/blog/2018/09/22/sutton-chap02-bandits#24-incremental-implementation">section 2.4</a>) where we incrementally computed Q estimates.<br/>
 For the on-policy method, the only difference is that here we average returns whereas in chapter 2 we averaged rewards.<br/>
@@ -298,4 +298,4 @@ Off-policy methods are based on __importance sampling__, that weight the return 
 In the next chapter, we'll consider methods that make use of experience (like Monte Carlo) but do bootstrap (like DP methods).
 
 
-[ref-series]: /blog/2018/09/21/sutton-index
+[ref-series]: /blog/2018/09/22/sutton-index

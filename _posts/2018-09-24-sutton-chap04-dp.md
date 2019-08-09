@@ -96,7 +96,7 @@ To produce each approximation $v_{k+1}$ from $v_k$, we apply the same operation 
 - Each iteration of iterative policy evaluation updates the value of every state once to produce $v_{k+1}$
 - Updates are called _expected updates_ because they rely on an expectation over all possible next states (rather than a sample next state)
 
-Note: the adjective __expected__ is often used in opposition with __sampled__. 
+Note: the adjective __expected__ is often used in opposition with __sampled__.
 - The expected update will use knowledge about the environment (the $p$ function) to compute the expectation given all the next states probabilities
 - The sampled update will sample the next state and thus we don't need to know the environment's dynamics to use it. The idea is that with enough samples, we will approach the expected update, but we'll see that in subsequent chapters.
 
@@ -391,4 +391,4 @@ Basic ideas for solving MDPs with Dynamic Programming:
 DP requires a complete model of the environment, and does bootstrapping (i.e. creating estimates out of other estimates). In the next chapter (Monte Carlo methods) we don't require any model and we don't bootstrap. In the chapter after (TD-learning) we do not require a model either but we do bootstrap.
 
 
-[ref-series]: /blog/2018/09/21/sutton-index
+[ref-series]: /blog/2018/09/22/sutton-index
