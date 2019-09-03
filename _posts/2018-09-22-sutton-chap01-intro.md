@@ -21,7 +21,7 @@ Main elements : agent and environment
 
 <div class="img-block" style="width: 400px;">
     <img src="/imgs/sutton/rl_basics.png"/>
-    <span><strong>Fig 2.1.</strong> Agent and Environment interactions</span>
+    <span><strong>Fig 1.1.</strong> Agent and Environment interactions</span>
 </div>
 
 Subelements:
@@ -58,8 +58,8 @@ Major topics in chronological order
 - __optimal control__: designing a controller to minimize a measure of a dynamical system’s behavior over time - value functions and dynamic programming
 - __temporal difference (TD) methods__: driven by the difference between temporally successive estimates of the same quantity
 
-Something interesting
-- RL + game theory : Szita 2012
+Interesting reference:
+- RL + game theory : Reinforcement Learning in Games, [Szita 2012](https://link.springer.com/chapter/10.1007/978-3-642-27645-3_17)
 
 
 [ref-series]: /blog/2018/09/22/sutton-index
