@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Sutton & Barto summary entrypoint"
-date:   2018-09-22 00:20:34 +0200
+date:   2018-09-22 11:20:34 +0200
 categories: rl sutton
 math: true
 ---
